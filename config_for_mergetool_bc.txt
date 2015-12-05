@@ -1,0 +1,19 @@
+﻿[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[merge]
+    tool = bc3
+[mergetool "bc3"]
+    cmd = '/d/Documents/Downloads/Beyond Compare 3/Beyond Compare 3/BCompare.exe' \
+    "$PWD/$LOCAL" \
+    "$PWD/$REMOTE" \
+    "$PWD/$BASE" \
+    "$PWD/$MERGED"
+    keepBackup = false
+    trustExitCode = false
+    
